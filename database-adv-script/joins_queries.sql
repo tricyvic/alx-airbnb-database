@@ -16,6 +16,8 @@ FROM
 LEFT JOIN 
     reviews ON properties.id = reviews.property_id;
 
+-- ORDER BY
+
 -- FULL OUTER JOIN (simulated using UNION): Retrieve all users and all bookings, even if the user has no booking or a booking is not linked to a user
 SELECT 
     users.*, 
